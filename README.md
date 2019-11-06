@@ -8,14 +8,16 @@
 
 DreamHouse is a sample application that demonstrates the unique value proposition of the Salesforce platform for building Employee Productivity and Customer Engagement apps.
 
+> This sample application is designed to run on Salesforce Platform. If you want to experience Lightning Web Components on any platform, please visit https://lwc.dev, and try out our Lightning Web Components sample application [LWC Recipes OSS](https://github.com/trailheadapps/lwc-recipes-oss).
+
 ## Installation Instructions
 
 There are two ways to install Dreamhouse:
 
--   [Using Salesforce DX](#installing-dreamhouse-using-salesforce-dx): This is the recommended installation option. Use this option if you are a developer who wants to experience the app and the code.
+-   [Using a Scratch Org](#installing-dreamhouse-using-a-scratch-org): This is the recommended installation option. Use this option if you are a developer who wants to experience the app and the code.
 -   [Using an Unlocked Package](#installing-dreamhouse-using-an-unlocked-package): This option allows anybody to experience the sample app without installing a local development environment.
 
-## Installing Dreamhouse using Salesforce DX
+## Installing Dreamhouse using a Scratch Org
 
 1. Set up your environment. Follow the steps in the [Quick Start: Lightning Web Components](https://trailhead.salesforce.com/content/learn/projects/quick-start-lightning-web-components/) Trailhead project. The steps include:
 
@@ -67,7 +69,9 @@ sfdx force:data:tree:import --plan data/sample-data.json
 sfdx force:org:open
 ```
 
-9. Select **DreamHouse** in the App Launcher
+9. In **Setup**, under **Themes and Branding**, activate the **Lightning Lite** theme.
+
+10. In App Launcher, select the **Dreamhouse** app.
 
 ## Installing Dreamhouse using an Unlocked Package
 
@@ -75,13 +79,17 @@ sfdx force:org:open
 
 2. Enable MyDomain in your DE org. Instructions to do this are [here](https://trailhead.salesforce.com/modules/identity_login/units/identity_login_my_domain).
 
-3. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000KAfEIAW) to install the Dreamhouse unlocked package in your DE org.
+3. Click [this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000OE9wIAG) to install the Dreamhouse unlocked package in your DE org.
 
 4. Select **Install for All Users**
 
 5. In App Launcher, select the Dreamhouse app.
 
 6. Click the **Settings** tab and click the **Import Data** button in the **Sample Data Import** component.
+
+7. In **Setup**, under **Themes and Branding**, activate the **Lightning Lite** theme.
+
+8. In App Launcher, select the **Dreamhouse** app.
 
 ## Optional Installation Instructions
 
@@ -93,7 +101,7 @@ This repository contains several files that are relevant if you want to integrat
 
 ### Code linting
 
-[ESLint](https://eslint.org/) is a popular JavaScript linting tool used to identify stylistic errors and erroneous constructs. To use ESLint with Visual Studio Code, install [this extension](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-lwc) from the Visual Studio Code Marketplace. The [.eslintignore](/.eslintignore) file is provided as part of this repository to exclude specific files from the linting process in the context of Lighning Web Components development.
+[ESLint](https://eslint.org/) is a popular JavaScript linting tool used to identify stylistic errors and erroneous constructs. To use ESLint with Visual Studio Code, install [this extension](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-lwc) from the Visual Studio Code Marketplace. The [.eslintignore](/.eslintignore) file is provided as part of this repository to exclude specific files from the linting process in the context of Lightning Web Components development.
 
 ### Pre-commit hook
 
